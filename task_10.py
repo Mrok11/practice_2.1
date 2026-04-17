@@ -41,7 +41,7 @@ class XmlTool:
 
         self.skip_ws()
 
-        # 👉 self-closing tag <tag/>
+        # self-closing tag <tag/>
         if self.text.startswith("/>", self.pos):
             self.pos += 2
             return {"name": name, "attrs": attrs, "children": [], "text": ""}
